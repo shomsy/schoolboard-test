@@ -6,7 +6,9 @@
         "illuminate/database": "^8.10",
         "robmorgan/phinx": "^0.12.4",
         "symfony/yaml": "^5.1",
-        "pecee/simple-router": "4.2.0.6"
+        "pecee/simple-router": "4.2.0.6",
+        "spatie/array-to-xml": "^2.14",
+        "fzaninotto/faker": "^1.9"
     },
     "license": "MIT",
     "authors": [
@@ -20,5 +22,8 @@
             "App\\": "."
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "require-dev": {
+        "symfony/var-dumper": "^5.1"
+    }
 }
