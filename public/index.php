@@ -1,13 +1,10 @@
 <?php
 
-
-use Pecee\SimpleRouter\SimpleRouter;
-
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
-require_once dirname(__DIR__ . '/../../') . '/vendor/autoload.php';
+define('APP_ROOT', __DIR__ . '/../');
 
-SimpleRouter::setDefaultNamespace('App\Controllers');
-require_once dirname(__DIR__ . '/../../') . '/routes/web.php';
-SimpleRouter::start();
+require_once(APP_ROOT . '/vendor/autoload.php');
+require_once(APP_ROOT . '/config/bootstrap.php');
+require_once(APP_ROOT . '/config/router.php');
