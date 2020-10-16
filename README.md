@@ -1,7 +1,9 @@
 # schoolboard-test
 
-Using Phinx:
-- create new migration:
-php vendor/bin/phinx create CreateMigrationNameTable -c phinx.yml
+Steps:
+- clone project
+- composer install
 - run migrations: php vendor/bin/phinx migrate -e development
+
+Note: Test Data is in migration file.
 

@@ -2,6 +2,4 @@
 
 use Pecee\SimpleRouter\SimpleRouter as Route;
 
-Route::get('/', function (){
-    echo 'Hey, there! :)';
-});
+Route::get('/student/{id}', 'StudentController@show');
